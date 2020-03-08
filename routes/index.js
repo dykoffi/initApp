@@ -8,7 +8,7 @@ app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true }));
 
 router.get('/', function (req, res, next) {
-    res.render('accueil/index', { title: '<|> | Accueil', error: "", logo: "< | >", host: req.hostname });
+    res.render('accueil/index', { title: 'Accueil', error: "", host: req.hostname });
 });
 
 module.exports = router;

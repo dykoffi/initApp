@@ -90,6 +90,9 @@ const con = mysql.createConnection({
     password: '1234',
     database: 'xwork'
 })
+
+console.log(`start on port ${port}`)
+
 var io = require("socket.io").listen(server)
 io.sockets.on("connection", function (socket, pseudo) {
     console.log("un user c'est conneccte")
